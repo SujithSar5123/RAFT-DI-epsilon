@@ -11,7 +11,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-from raft import RAFT
+from core.raft import RAFT
 import evaluate
 import datasets
 from torch.utils.tensorboard import SummaryWriter
@@ -243,3 +243,4 @@ if __name__ == '__main__':
     np.random.seed(1234)
 
     train(args)
+
