@@ -10,11 +10,11 @@ import numpy as np
 import torch
 import torch.utils.data as data
 
-from utils import frame_utils
-from utils.augmentor import FlowAugmentor, SparseFlowAugmentor
+from core.utils import frame_utils
+from core.utils.augmentor import FlowAugmentor, SparseFlowAugmentor
 
 try:
-    from utils.augmentor import DIC64Augmentor
+    from core.utils.augmentor import DIC64Augmentor
 except Exception:
     DIC64Augmentor = None
 
