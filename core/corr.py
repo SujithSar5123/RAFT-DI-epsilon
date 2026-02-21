@@ -1,7 +1,7 @@
 # corr.py
 import torch
 import torch.nn.functional as F
-from utils.utils import bilinear_sampler
+from core.utils.utils import bilinear_sampler
 
 try:
     import alt_cuda_corr
