@@ -3,10 +3,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from update import BasicUpdateBlock, SmallUpdateBlock
-from extractor import BasicEncoder, SmallEncoder
-from corr import CorrBlock, AlternateCorrBlock
-from utils.utils import coords_grid
+from core.update import BasicUpdateBlock, SmallUpdateBlock
+from core.extractor import BasicEncoder, SmallEncoder
+from corr.corr import CorrBlock, AlternateCorrBlock
+from core.utils.utils import coords_grid
 
 try:
     autocast = torch.cuda.amp.autocast
